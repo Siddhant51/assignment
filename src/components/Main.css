@@ -1,0 +1,213 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 2px solid #ff8ecc;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.top .horizontal-menu{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid #ff8ecc; */
+}
+
+.top .horizontal-menu .items:first-child{
+    border: 2px solid #ff8ecc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.top .horizontal-menu .items:last-child{
+    border: 2px solid #ff8ecc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.top .horizontal-menu .items{
+    border: 2px solid #ff8ecc;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ff8ecc;
+}
+
+.top .horizontal-menu .items:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #ff8ecc;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.center .left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* width: 70%; */
+    padding-right: 20px;
+}
+
+select{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.center .left p{
+    color: #ff8ecc;
+}
+
+.center .right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* width: 70%; */
+    /* border: 2px solid #ff8ecc; */
+}
+
+.right .dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 7px;
+}
+
+.date{
+    border: 1px solid #ff8ecc;
+    width: 100%;
+    padding: 5px;
+}
+.right .down{
+    border: 1px solid #ff8ecc;
+    padding: 5px;
+    /* font-size: xx-large; */
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ff8ecc; */
+    /* height: 65%; */
+}
+
+.bottom .middle{
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+}
+
+.middle .left{
+    width: 40%;
+    height: 100%;
+}
+
+.vertical-menu{
+    width: 100%;
+    /* height: 100%; */
+    height: 62vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.400);
+    flex-direction: column;
+    border: 2px solid #ff8ecc;
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: auto;
+}
+.vertical-menu::-webkit-scrollbar{
+    display: none;
+}
+
+.vertical-menu .items{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid #ff8ecc;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.vertical-menu .items:hover{
+    cursor: pointer;
+    background-color: #ff8ecc;
+    transition: all 0.3s;
+}
+
+.vertical-menu .items .title{
+    padding-top: 5px;
+    font-size: large;
+    font-weight: 500;
+}
+.vertical-menu .items p{
+    font-size: small;
+}
+
+.middle .right{
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    /* border: 2px solid #ff8ecc; */
+    /* padding-right: 20px; */
+    padding-left: 20px;
+}
+
+.table-container-page2{
+    /* height: 60vh; */
+    overflow-y: auto;
+    width: 100%;
+}
+
+.right .table-container-page2 table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.400);
+    border: 1px solid #ff8ecc;
+    border-radius: 20px;
+}
+.right .table-container-page2 table th{
+    /* background-color: black; */
+    border: 1px solid #ff8ecc;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    padding: 20px;
+}
+.right .table-container-page2 table tr{
+    border: 1px solid #ff8ecc;
+    padding: 10px;
+}
+.table-container-page2 table td, .table-container-page2 table th{
+    /* border: 1px solid #ff8ecc; */
+    padding: 10px;
+}
+
+.save{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.save button{
+    font-size: large;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: purple;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,119 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 2px solid #ff8ecc;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.table-header{
+    align-items: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .table-header label{
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+  }
+
+  .table-header input{
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+    padding: 5px;
+  }
+  .table-header input::placeholder{
+    color: rgb(152, 152, 152);
+  }
+  
+  .table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+  }
+  .table::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #ffffff7e;
+}
+.table::-webkit-scrollbar
+{
+  height: 15px;
+  background-color: #ffffff7e;
+}
+.table::-webkit-scrollbar-thumb
+{
+  background-color: black;
+  border: 3.5px solid #ff8ecc;
+  border-radius: 10px;
+}
+  
+  .table table th{
+    font-size: larger;
+    height: 55px;
+    background-color: #ff8ecc;
+  }
+  
+  .table table td,
+  .table table th {
+    border: 1px solid #ff8ecc;
+    border-left: none;
+    border-right: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 600px; /* Apply a default width to all td and th elements */
+  }
+  
+  .table tr>th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #cc5d9a;
+    backdrop-filter: blur(4px) brightness(0.7);
+    
+  }
+  
+  .table tr>td:first-child {
+    position: sticky;
+    left: 0;
+    backdrop-filter: blur(4px) brightness(0.7);
+  }
+  
+  .table table {
+    border-collapse: collapse;
+    width: 140%;
+    height: 100%;
+    border: none;
+    /* overflow-x: auto; */
+  }
+
+  .pagination{
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  
